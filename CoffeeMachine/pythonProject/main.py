@@ -51,7 +51,7 @@ def process_coins():
     return total
 
 
-def is_transaction_successful(money_received,cost_drink):
+def is_transaction_successful(money_received, cost_drink):
     """Returns True is the payment is accepted and False if the money is insufficient"""
     if money_received > cost_drink:
         change = round(money_received - cost_drink, 2)
